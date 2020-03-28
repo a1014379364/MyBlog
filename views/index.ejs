@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include head%>
+  <title>陈嘉进个人博客</title>
+</head>
+<body>
+  <!--顶部导航-->
+  <%- include('bar',{power : power})%>
+
+  <div class="content index-content container">
+
+    <!--左侧介绍区-->
+    <%- include('introduce',{columnData : columnData})%>
+
+    <!--右侧个人名片-->
+    <%- include card%>
+
+    <!--右侧分类专栏-->
+    <%- include class-nav%>
+
+    <!--左侧动态扩展区-->
+    <%- include column%>
+
+  </div>
+
+  <!--页尾-->
+  <%- include web-foot%>
+</body>
+<%- include foot%>
+</html>

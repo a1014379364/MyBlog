@@ -1,0 +1,17 @@
+<div class="column">
+    <ul>
+        <% data.map(function (item,index) {%>
+            <li class="col-md-8">
+                <a href="/watchArticles?columnId=<%= item.id%>">
+                    <h3 class="title"><%= item.columnName%></h3>
+                    <p><%= item.columnIntroduce%></p>
+                    <div class="article-data">
+                        <span class="text-primary"><%= item.time%></span>
+                        <span class="static">阅读数:</span><span class="text-primary">100</span>
+                        <span class="static">喜欢数:</span><span class="text-primary">100</span>
+                    </div>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</div>

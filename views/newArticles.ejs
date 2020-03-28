@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include head%>
+  <title>陈嘉进个人博客</title>
+</head>
+<body>
+  <!--顶部导航-->
+  <%- include('bar',{power : power})%>
+
+  <div class="newArticles content container">
+      <form action="/articles/newArticles?columnId=<%= columnId%>&id=<%= data.id%>" method="post" >
+        <div class="form-group">
+          <label for="article-title">
+            <span class="glyphicon glyphicon-menu-right"></span> 文章标题
+          </label>
+          <input type="text" class="form-control must-fill" name="title" placeholder="请输入文章标题" value="<%= data.articleTitle %>">
+        </div>
+        <div class="form-group">
+          <label for="article-title">
+            <span class="glyphicon glyphicon-menu-right"></span> 文章简介
+          </label>
+          <textarea type="text" class="intro form-control must-fill" name="introduce" placeholder="请输入文章简介"><%- data.articleIntroduce %></textarea>
+        </div>
+        <div class="form-group">
+          <label for="article-title">
+            <span class="glyphicon glyphicon-menu-right"></span> 文字内容
+          </label>
+          <textarea id="content" type="text" class="ckeditor" name="content" placeholder="请输入文章内容"><%- data.articleContent %></textarea>
+          <!-- <textarea id="TextArea" type="text" class="content form-control must-fill ckeditor" name="content" placeholder="请输入文章内容"></textarea> -->
+        </div>
+
+        <%if(data.id){%>
+          <button type="submit" class="sure btn btn-success pull-right disabled" disabled>
+            修改 <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        <%}else{%>
+          <button type="submit" class="sure btn btn-success pull-right disabled" disabled>
+            发布 <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        <%}%>
+        <a type="button" class="give-up btn btn-default pull-right" href="/writeArticles?columnId=<%= columnId%>">
+          放弃 <span class="glyphicon glyphicon-remove"></span>
+        </a>
+      </form>
+  </div>
+
+  <!--页尾-->
+  <%- include web-foot%>
+</body>
+<%- include foot%>
+<script src="/javascripts/handle.js"></script>
+<script src="/bower_components/ckeditor/ckeditor.js"></script>
+
+<script>
+    $(function () {
+
+        /*判别表单内容*/
+        isSL("div.newArticles form div.form-group input[name='title']",16);
+        isSL("div.newArticles form div.form-group textarea[name='introduce']",100);
+        // isSL("div.newArticles form div.form-group textarea[name='content']",3000);
+
+    })
+</script>
+</html>

@@ -1,0 +1,41 @@
+<nav class="bar navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#phoneBar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="Logo navbar-brand" href="/">陈嘉进个人博客</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="phoneBar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <span class="glyphicon glyphicon-wrench visible-md visible-lg"></span>
+                    <a href="/login"><%= power.name %></a>
+                </li>
+                <% if (power.login){%>
+                <li>
+                    <span class="glyphicon glyphicon-pencil visible-md visible-lg" aria-hidden="true"></span>
+                    <a href="/write">编辑</a>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-log-out visible-md visible-lg" aria-hidden="true"></span>
+                    <a href="/users/logout">退出登录</a>
+                </li>
+                <%}else{%>
+                <li>
+                    <span class="glyphicon glyphicon-log-in visible-md visible-lg" aria-hidden="true"></span>
+                    <a href="/login">登录</a>
+                </li>
+                <%}%>
+                <li>
+                    <span class="glyphicon glyphicon-envelope visible-md visible-lg" aria-hidden="true"></span>
+                    <a href="/close">反馈</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

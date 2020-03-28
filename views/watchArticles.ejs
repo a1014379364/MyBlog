@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include head%>
+  <title>陈嘉进个人博客</title>
+</head>
+<body>
+  <!--顶部导航-->
+  <%- include('bar',{power : power})%>
+
+  <div class="content watchArticles-content container">
+
+    <div class="fenye">
+        <h3 class="title">
+            相关文章
+            <span class="glyphicon glyphicon-map-marker pull-right"></span>
+        </h3>
+        <div class="articleTitles-box">
+            <ul class="articleTitles">
+                <% data.map(function (item,index) {%>
+                   <li>
+                       <a href="/watchArticles?id=<%= item.id%>&columnId=<%= columnId%>"><%= item.articleTitle%></a>
+                   </li> 
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+
+    <div class="articlesView pull-right">
+        <h3 class="articleTitle">
+            <%- article.articleTitle%>
+            <span class="glyphicon glyphicon-book pull-right"></span>
+        </h3>
+        <div class="articleContent">
+            <h4>文章简介:<%- article.articleIntroduce%></h3> 
+            <br>
+            <%- article.articleContent%>
+        </div>
+    </div>
+
+  </div>  
+
+  <!--页尾-->
+  <%- include web-foot%>
+</body>
+<%- include foot%>
+</html>

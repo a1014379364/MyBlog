@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1922b1b5-bd5e-44a7-8ac6-4401c76e798a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XdyfBdamiOu04Fi7DJv5a8jVEW" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="H:/nunuStudio" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code_space\MyBlog\public\images" />
+      <recent name="D:\Code_space\MyBlog\public\javascripts\threejs" />
+      <recent name="D:\Code_space\MyBlog\public\javascripts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1922b1b5-bd5e-44a7-8ac6-4401c76e798a" name="Default Changelist" comment="" />
+      <created>1581390366118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581390366118</updated>
+      <workItem from="1581390367310" duration="6006000" />
+      <workItem from="1581424052819" duration="700000" />
+      <workItem from="1581430752823" duration="46000" />
+      <workItem from="1581498033859" duration="1438000" />
+      <workItem from="1581561501394" duration="829000" />
+      <workItem from="1581562700869" duration="194000" />
+      <workItem from="1581660989207" duration="11088000" />
+      <workItem from="1581688678214" duration="20000" />
+      <workItem from="1581855436945" duration="5605000" />
+      <workItem from="1581907886693" duration="7699000" />
+      <workItem from="1581919009290" duration="3095000" />
+      <workItem from="1581922351803" duration="6521000" />
+      <workItem from="1581997205110" duration="13519000" />
+      <workItem from="1582082396660" duration="136000" />
+      <workItem from="1582083215569" duration="1982000" />
+      <workItem from="1582087669023" duration="2650000" />
+      <workItem from="1582099753148" duration="4675000" />
+      <workItem from="1582168442553" duration="3726000" />
+      <workItem from="1582188048548" duration="8855000" />
+      <workItem from="1582255138985" duration="14706000" />
+      <workItem from="1582340215770" duration="10958000" />
+      <workItem from="1582421731236" duration="17767000" />
+      <workItem from="1582520668521" duration="1682000" />
+      <workItem from="1582522762958" duration="3463000" />
+      <workItem from="1582536571734" duration="976000" />
+      <workItem from="1582597362199" duration="607000" />
+      <workItem from="1582712264281" duration="139000" />
+      <workItem from="1585017650713" duration="329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

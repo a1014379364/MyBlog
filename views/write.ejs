@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include head%>
+    <title>编辑页面</title>
+</head>
+<body>
+    <!--顶部导航-->
+    <%- include('bar',{power : power})%>
+
+    <div class="content write-content container">
+        <div class="head">
+            <div class="head-box">
+                <strong>本站栏目</strong>
+                <a href="#" class="btn btn-success add-column" data-toggle="modal" data-target=".add-modal">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    新建
+                </a>
+            </div>
+        </div>
+
+        <!--模态框-->
+        <%- include('add-modal',{columnData : columnData})%>
+
+        <!-- 栏目集合 -->
+        <%- include('column-box',{data : data})%>
+    </div>
+
+    <!--页尾-->
+    <%- include web-foot%>
+</body>
+<%- include foot%>
+<script src="/javascripts/handle.js"></script>
+<script src="/bower_components/ckeditor/ckeditor.js"></script>
+<script>
+    $(function () {
+
+        isSL("div.add-modal div.modal-body input[name='title']",16);
+        isSL("div.add-modal div.modal-body textarea[name='introduce']",60);
+
+    })
+</script>
+</html>

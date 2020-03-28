@@ -1,0 +1,23 @@
+<ul class="column-box">
+    <% data.map(function (item,index) {%>
+    <li>
+        <img src="/images/book.jpg" class="img-thumbnail hidden-sm hidden-xs">
+        <h3 class="column-title"><%= item.articleTitle%></h3>
+        <a href="/articles/deleteArticles?id=<%=item.id%>&columnId=<%=columnId%>" class="btn btn-danger del-column">
+            <span class="glyphicon glyphicon-remove"></span>
+            删除
+        </a>
+        <p class="column-introduce"><%= item.articleIntroduce%></p>
+        <div class="column-info">
+            <span class="text-info"><%= item.time%></span>
+            <span class="text-muted">喜欢数:</span><span class="text-info">100</span>
+            <span class="text-muted">文章数:</span><span class="text-info">100</span>
+            <span class="text-muted">浏览量:</span><span class="text-info">100</span>
+        </div>
+        <a href="/newArticles?id=<%=item.id%>&columnId=<%=columnId%>" class="btn btn-default add-column">
+            <span class="glyphicon glyphicon-edit"></span>
+            编辑
+        </a>
+    </li>  
+    <% }) %>
+</ul>

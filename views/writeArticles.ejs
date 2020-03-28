@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- include head%>
+  <title>陈嘉进个人博客</title>
+</head>
+<body>
+  <!--顶部导航-->
+  <%- include('bar',{power : power})%>
+
+  <div class="content writeArticles-content container">
+
+    <!--左侧介绍区-->
+    <%- include('introduce',{columnData : columnData})%>
+
+    <!-- 动态图 -->
+    <%- include gif%>
+    
+    <!-- 编辑栏目/新增文章 -->
+    <div class="edit-box col-md-3">
+      <a href="#" class="btn btn btn-primary btn-block" data-toggle="modal" data-target=".add-modal">编辑栏目</a>
+      <a href="/newArticles?columnId=<%= columnId%>" class="btn btn btn-success btn-block">新增文章</a>
+    </div>
+
+    <!--模态框-->
+    <%- include('add-modal',{columnData : columnData})%>
+
+    <!-- 文章栏顶部 -->
+    <div class="aggregate-head col-md-12 ">
+        <h3 class="text text-center">所有文章</h3>
+    </div>
+
+    <!-- 文章集合 -->
+    <%- include('articles-box',{data : data,columnId:columnId})%>
+
+  </div>  
+
+  <!--页尾-->
+  <%- include web-foot%>
+</body>
+<%- include foot%>
+<script src="/javascripts/handle.js"></script>
+<script>
+    $(function () {
+
+        isSL("div.add-modal div.modal-body input[name='title']",16);
+        isSL("div.add-modal div.modal-body textarea[name='introduce']",60);
+
+    })
+</script>
+</html>
